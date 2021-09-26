@@ -1,0 +1,50 @@
+.safety-section{
+    padding: 96px 0 32px;
+    .container{
+        .safety-intro{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            h2{
+                color: $textColor;
+                font-size: 28px;
+                line-height: 1.5;
+                margin-bottom: 16px;
+                font-weight: 600;
+            }
+            p{
+                color: $paragraphColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .safety-section{
+        .container{
+            .safety-intro{
+                margin-bottom: 30px;
+                text-align: center;
+                h2{
+                    font-size: 20px;
+                    
+                }
+            }
+            .safety-image{
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .safety-section{
+        .container{
+            .safety-image{
+                max-width: 100%;
+            }
+        }
+    }
+}

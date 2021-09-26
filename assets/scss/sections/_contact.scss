@@ -1,0 +1,54 @@
+.contact-section{
+    padding: 96px 0 32px;
+    .container{
+        .contact-intro{
+            h2{
+                font-size: 28px;
+                color: $textColor;
+                line-height: 1.5;
+            }
+            p{
+                color: $paragraphColor;
+            }
+        }
+
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            p{
+                font-size: 14px;
+                color: $paragraphColor;
+                span{
+                    font-weight: 700;
+                    color: $textColor;
+                }
+            }
+        }
+
+        .contact-button{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .contact-section{
+        .container{
+            .contact-intro{
+                text-align: center;
+                margin-bottom: 30px;
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .contact-button{
+                justify-content: start;
+            }
+        }
+    }
+}
